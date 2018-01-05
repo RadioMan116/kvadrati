@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024px" height="3px" viewBox="0 0 1024 3" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>Desktop</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g id="Desktop">
+            <path d="M561.5,1.5 L611.5,1.5" id="Line" stroke="#D0011B"></path>
+            <path d="M612.5,1.5 L662.5,1.5" id="Line" stroke="#F6A623"></path>
+            <path d="M663.5,1.5 L713.5,1.5" id="Line" stroke="#F8E81C"></path>
+            <path d="M714.5,1.5 L764.5,1.5" id="Line" stroke="#8B572A"></path>
+            <path d="M765.5,1.5 L815.5,1.5" id="Line" stroke="#7ED321"></path>
+            <path d="M816.5,1.5 L866.5,1.5" id="Line" stroke="#417505"></path>
+            <path d="M867.5,1.5 L917.5,1.5" id="Line" stroke="#BD0FE1"></path>
+            <path d="M918.5,1.5 L968.5,1.5" id="Line" stroke="#9012FE"></path>
+            <path d="M969.5,1.5 L1019.5,1.5" id="Line" stroke="#4990E2"></path>
+            <path d="M1020.5,1.5 L1070.5,1.5" id="Line" stroke="#50E3C2"></path>
+            <path d="M0.5,1.5 L50.5,1.5" id="Line" stroke="#D0011B"></path>
+            <path d="M51.5,1.5 L101.5,1.5" id="Line" stroke="#F6A623"></path>
+            <path d="M102.5,1.5 L152.5,1.5" id="Line" stroke="#F8E81C"></path>
+            <path d="M153.5,1.5 L203.5,1.5" id="Line" stroke="#8B572A"></path>
+            <path d="M153.5,1.5 L203.5,1.5" id="Line" stroke="#8B572A"></path>
+            <path d="M204.5,1.5 L254.5,1.5" id="Line" stroke="#7ED321"></path>
+            <path d="M255.5,1.5 L305.5,1.5" id="Line" stroke="#417505"></path>
+            <path d="M306.5,1.5 L356.5,1.5" id="Line" stroke="#BD0FE1"></path>
+            <path d="M357.5,1.5 L407.5,1.5" id="Line" stroke="#9012FE"></path>
+            <path d="M408.5,1.5 L458.5,1.5" id="Line" stroke="#4990E2"></path>
+            <path d="M459.5,1.5 L509.5,1.5" id="Line" stroke="#50E3C2"></path>
+            <path d="M510.5,1.5 L560.5,1.5" id="Line" stroke="#B8E986"></path>
+        </g>
+    </g>
+</svg>

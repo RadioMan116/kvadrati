@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "angular-carousel": "^1.1.0",
+    "ejs-lint": "^0.3.0",
     "gulp-bootstrap-configurator": "^0.4.1"
   },
   "devDependencies": {
@@ -19,7 +21,8 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "gulp-uglify": "^2.1.2",
-    "jshint": "^2.9.4"
+    "jshint": "^2.9.4",
+    "react-alice-carousel": "^1.7.1"
   },
   "scripts": {
     "make": "node_modules/gulp/bin/gulp.js",

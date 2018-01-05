@@ -17,7 +17,7 @@ gulp.task('grid', function () {
 });
 
 gulp.task('sass', function () {
-    return gulp.src('src/style/**/index.scss')
+    return gulp.src('src/style/**/*.scss')
         .pipe(sass())
         .pipe(cssmin())
         .pipe(gulp.dest('dist/style/'));
