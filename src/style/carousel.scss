@@ -203,7 +203,7 @@
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
   filter: alpha(opacity=50);
-  opacity: .5;
+  //opacity: .5;
 }
 .carouselGrid-control.left {
   background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
@@ -214,7 +214,7 @@
   background-repeat: repeat-x;
 }
 .carouselGrid-control.right {
-  right: 0;
+  right: 5%;
   left: auto;
   background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
   background-image:      -o-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
@@ -236,7 +236,7 @@
 .carouselGrid-control .glyphicon-chevron-left,
 .carouselGrid-control .glyphicon-chevron-right {
   position: absolute;
-  top: 50%;
+  top: 40%;
   z-index: 5;
   display: inline-block;
   margin-top: -10px;
@@ -253,8 +253,7 @@
 }
 .carouselGrid-control .icon-prev,
 .carouselGrid-control .icon-next {
-  width: 20px;
-  height: 20px;
+
   font-family: serif;
   line-height: 1;
 }
@@ -313,18 +312,16 @@
   .carouselGrid-control .glyphicon-chevron-right,
   .carouselGrid-control .icon-prev,
   .carouselGrid-control .icon-next {
-    width: 30px;
-    height: 30px;
     margin-top: -15px;
     font-size: 30px;
   }
   .carouselGrid-control .glyphicon-chevron-left,
   .carouselGrid-control .icon-prev {
-    margin-left: -15px;
+    margin-left: -3%;
   }
   .carouselGrid-control .glyphicon-chevron-right,
   .carouselGrid-control .icon-next {
-    margin-right: -15px;
+    margin-right: -3%;
   }
   .carouselGrid-caption {
     right: 20%;
@@ -337,7 +334,7 @@
 }
 
 .carouselGrid-control        { width:  4%; }
-.carouselGrid-control.left,.carouselGrid-control.right {margin-left:15px;background-image:none;}
+.carouselGrid-control.left,.carouselGrid-control.right {margin-left:3%;background-image:none;}
 @media (max-width: 767px) { /* xs */
   .carouselGrid-inner .active.left { left: -50%; }
   .carouselGrid-inner .next        { left:  50%;}
