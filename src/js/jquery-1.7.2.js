@@ -385,6 +385,7 @@ jQuery.extend = jQuery.fn.extend = function() {
 	return target;
 };
 
+
 jQuery.extend({
 	noConflict: function( deep ) {
 		if ( window.$ === jQuery ) {
