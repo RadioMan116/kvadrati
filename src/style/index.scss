@@ -111,7 +111,7 @@ img {
 .div1_square {
   position: absolute;
   left: 46%;
-  bottom:-21%;
+  bottom: -21%;
   width: 12%;
 }
 
@@ -269,6 +269,7 @@ img {
 .div5_carousel_h3 {
   margin-left: 9.49970703%;
   margin-top: 5.25rem;
+  margin-bottom: 1rem;
 }
 
 .div5_stars {
@@ -297,12 +298,12 @@ img {
 
 .div5_star:hover .star_p {
   font-size: 187.5%;
-  top: 25%;
+  top: 22%;
 }
 
 .star_p {
   position: absolute;
-  top: 30%;
+  top: 26%;
 }
 
 .img_star {
@@ -344,6 +345,7 @@ img {
 
 .div6_prices_title {
   width: 93%;
+  height: 2rem;
 }
 
 .div6_string_1, .div6_string_2 {
@@ -436,13 +438,12 @@ img {
 
 .div9_img {
   width: 100%;
-  height: 100vh;
+  //height: 100vh;
 }
 
 .div9_info {
   width: 60%;
   height: 45vh;
-  border: 1px solid black;
   position: absolute;
   padding-left: 4.1015625%;
   top: 0;
@@ -458,25 +459,93 @@ img {
   width: 2rem;
   border-radius: 50%;
   background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div9_main_info {
+  margin-top: 0.7rem;
+  align-items: center;
 }
 
 .div9_info_h3 {
+  font-weight: 400;
+}
 
+.div9_footer {
+  padding-left: 4.1015625%;
+  width: 50.5585938%;
+  position: absolute;
+  bottom: 2rem;
+}
+
+.div10 {
+
+}
+
+.div10_span {
+  position: relative;
+  padding-left: 3.90625%;
+  padding-right: 9.9609375%;
+  height: 2rem;
+  background: #ff8f44;
+  border: 2px solid #fff;
+  align-items: center;
+  cursor: pointer;
+}
+
+.div10_p_two {
+  position: absolute;
+  right: 0;
+  padding-right: 9.9609375%;
+  opacity: 0;
+  bottom: 0;
+}
+
+.div10_p_one {
+  position: absolute;
+  right: 0;
+  padding-right: 9.9609375%;
+  bottom: 0;
+}
+
+.active p:first-child {
+  display: none;
+}
+
+.active p:last-child {
+  opacity: 1;
+}
+
+.div10:hover >.div10_span {
+  text-decoration: underline;
+  font-weight: 700;
+}
+.div10_main {
+  display: none;
+  padding-bottom: 5rem;
+}
+.div10_info {
+  margin-left: 3.90625%;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  width: 55%;
 }
 
 .div4_logo_p, .div4_services, .div4_services_h3, .div4_logo_p2, .div4_info, .div4_tel, .div7_h3, .div7_menu_h3 {
   color: white;
 }
 
-.div1_header, .div1_logo, .div1_list ul, .div1_info, .div1_block_text, .div1_footer, .div3_social, .div3_info, .div3, .div4_services, .div5_about, .div5_texts, .div6_prices_title, .div6_string_1, .div6_string_2 {
+.div1_header, .div1_logo, .div1_list ul, .div1_info, .div1_block_text, .div1_footer, .div3_social, .div3_info, .div3, .div4_services, .div5_about, .div5_texts, .div6_prices_title, .div6_string_1, .div6_string_2, .div9_main_info, .div10_span {
   display: flex;
 }
 
-.div1_logo_foto, .div1_foto, .div1_inst img, .div1_caption, .div1, .div2, .div3, .div4, .div5, .div6, .div7, .div5_about, .div6_prices {
+.div1_logo_foto, .div1_foto, .div1_inst img, .div1_caption, .div1, .div2, .div3, .div4, .div5, .div6, .div7, .div5_about, .div6_prices, .div10 {
   width: 100%;
 }
 
-.div1_list ul li, .div6_string_1, .div6_string_2 {
+.div1_list ul li, .div6_string_1, .div6_string_2, .div9_info_h3,.div6_h3_1,.div6_h3_2,.div6_h3_3,.div10_info {
   font-size: 100%;
 }
 
