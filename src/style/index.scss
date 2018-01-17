@@ -127,7 +127,7 @@ img {
 }
 
 #div2_car_img {
-  height: 100vh;
+  //height: 100vh;
 }
 
 .div3 {
@@ -249,7 +249,7 @@ img {
 .div5_text {
   width: 37.2070312%;
   margin-left: 7.49970703%;
-
+  font-weight: 300;
 }
 
 .div5_text:last-child {
@@ -518,14 +518,16 @@ img {
   opacity: 1;
 }
 
-.div10:hover >.div10_span {
+.div10:hover > .div10_span {
   text-decoration: underline;
   font-weight: 700;
 }
+
 .div10_main {
   display: none;
   padding-bottom: 5rem;
 }
+
 .div10_info {
   margin-left: 3.90625%;
   margin-top: 2rem;
@@ -533,19 +535,32 @@ img {
   width: 55%;
 }
 
+.div11_images {
+  justify-content: center;
+}
+.div11_img_1 {
+  width: 31%;
+  margin-left: 11.6875%;
+}
+.div11_img_2 {
+  width: 7%;
+  margin-left: 4.6875%;
+  padding-top: 1%;
+}
+
 .div4_logo_p, .div4_services, .div4_services_h3, .div4_logo_p2, .div4_info, .div4_tel, .div7_h3, .div7_menu_h3 {
   color: white;
 }
 
-.div1_header, .div1_logo, .div1_list ul, .div1_info, .div1_block_text, .div1_footer, .div3_social, .div3_info, .div3, .div4_services, .div5_about, .div5_texts, .div6_prices_title, .div6_string_1, .div6_string_2, .div9_main_info, .div10_span {
+.div1_header, .div1_logo, .div1_list ul, .div1_info, .div1_block_text, .div1_footer, .div3_social, .div3_info, .div3, .div4_services, .div5_about, .div5_texts, .div6_prices_title, .div6_string_1, .div6_string_2, .div9_main_info, .div10_span, .div11_images,.div11_img_2  {
   display: flex;
 }
 
-.div1_logo_foto, .div1_foto, .div1_inst img, .div1_caption, .div1, .div2, .div3, .div4, .div5, .div6, .div7, .div5_about, .div6_prices, .div10 {
+.div1_logo_foto, .div1_foto, .div1_inst img, .div1_caption, .div1, .div2, .div3, .div4, .div5, .div6, .div7, .div5_about, .div6_prices, .div10,.div11_images {
   width: 100%;
 }
 
-.div1_list ul li, .div6_string_1, .div6_string_2, .div9_info_h3,.div6_h3_1,.div6_h3_2,.div6_h3_3,.div10_info {
+.div1_list ul li, .div6_string_1, .div6_string_2, .div9_info_h3, .div6_h3_1, .div6_h3_2, .div6_h3_3, .div10_info {
   font-size: 100%;
 }
 
@@ -590,7 +605,6 @@ img {
 
 .carousel-item1 img {
   display: block;
-  height: 90vh;
   width: 100%;
 }
 
@@ -638,7 +652,7 @@ img {
   margin: 0;
   padding: 0;
   position: absolute;
-  bottom: 2%;
+  bottom: 3.4%;
   background: rgba(255, 255, 255, 0.6);
   right: 0;
   text-align: center;
@@ -654,7 +668,7 @@ img {
   color: #fff;
   cursor: pointer;
   display: block;
-  font-size: 100%;
+  font-size: 250%;
 }
 
 .carousel-bullet1:hover {
