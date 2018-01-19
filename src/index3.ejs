@@ -13,6 +13,7 @@
     <script src="jquery-1.11.0.min.js"></script>
     <script src="bootstrap.js"></script>
     <link href="style/carousel.css" rel="stylesheet" type="text/css">
+    <script src="https://vk.com/js/api/openapi.js?151" type="text/javascript"></script>
 
 </head>
 <body>
@@ -81,25 +82,32 @@
         <div class="div11_info">
             <div class="div11_line">
                 <h3 class="div11_line_h3">
-
+                    Компания:
                 </h3>
-                <img src="" alt="">
+                <img src="images/div11_info.svg" alt="">
             </div>
             <div class="div11_line">
                 <h3 class="div11_line_h3">
-
+                    Телефон для связи:
                 </h3>
-                <a href=""></a>
-                <a href=""></a>
+                <a href="tel:+7(843)2033359">+7(843)203-33-59</a>,
+                <a href="tel:+79033446504">+7-90-33-446-504</a>
             </div>
             <div class="div11_line">
                 <h3 class="div11_line_h3">
-
+                    Мы в соц.Сетях:
                 </h3>
-                <img src="" alt="">
-                <img src="" alt="">
+                <a class=div3_vk href="">
+                    <img src="images/foto2.png" alt="">
+                </a>
+                <a class=div3_ins href="">
+                    <img src="images/foto8.png" alt="">
+                </a>
             </div>
         </div>
+    </div>
+    <div class="div12">
+
     </div>
     <div class="div7">
         <div class="div7_menu">
@@ -116,6 +124,7 @@
         </div>
         <div class="div7_info">
             <h3 class="div7_h3">Живые Комментарии !</h3>
+            <!--<div id="vk_comments"></div>-->
         </div>
     </div>
     <script>
@@ -135,6 +144,10 @@
             }
 
         });
+        window.onload = function () {
+            VK.init({apiId: 6337697, onlyWidgets: true});
+            VK.Widgets.Comments('vk_comments', {width: 500, limit: 15}, 321);
+        }
     </script>
 </div>
 </body>

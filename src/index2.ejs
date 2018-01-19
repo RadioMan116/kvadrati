@@ -14,6 +14,7 @@
     <script src="bootstrap.js"></script>
     <link href="style/carousel.css" rel="stylesheet" type="text/css">
     <script src="jquery-1.7.2.js"></script>
+    <script src="https://vk.com/js/api/openapi.js?151" type="text/javascript"></script>
 </head>
 <body>
 <div class="grid_container">
@@ -75,23 +76,28 @@
             <img class="div9_info_img" src="images/div9_img1.svg" alt="Преимущества">
             <div class="div9_main_info">
                 <span class="div9_info_span">1</span>
-                <h3 class="div9_info_h3">– Бесплатный выезд, консультация, и составление сметы</h3>
+                –
+                <h3 class="div9_info_h3">Бесплатный выезд, консультация, и составление сметы</h3>
             </div>
             <div class="div9_main_info">
                 <span class="div9_info_span">2</span>
-                <h3 class="div9_info_h3">– У нас самые конкурентные цены</h3>
+                –
+                <h3 class="div9_info_h3">У нас самые конкурентные цены</h3>
             </div>
             <div class="div9_main_info">
                 <span class="div9_info_span">3</span>
-                <h3 class="div9_info_h3">– Опытный и подобранный персонал, только мастера своего дела</h3>
+                –
+                <h3 class="div9_info_h3">Опытный и подобранный персонал, только мастера своего дела</h3>
             </div>
             <div class="div9_main_info">
                 <span class="div9_info_span">4</span>
-                <h3 class="div9_info_h3">– Работаем в удобное для вас время, включая субботу и воскресенье</h3>
+                –
+                <h3 class="div9_info_h3">Работаем в удобное для вас время, включая субботу и воскресенье</h3>
             </div>
             <div class="div9_main_info">
                 <span class="div9_info_span">5</span>
-                <h3 class="div9_info_h3">– Гарантия на все работы 3 года</h3>
+                –
+                <h3 class="div9_info_h3">Гарантия на все работы 3 года</h3>
             </div>
         </div>
         <div class="div9_footer">
@@ -1221,6 +1227,7 @@
         </div>
         <div class="div7_info">
             <h3 class="div7_h3">Живые Комментарии !</h3>
+            <!--<div id="vk_comments"></div>-->
         </div>
     </div>
     <script>
@@ -1243,6 +1250,11 @@
         $(".div10_span").click(function () {
             $(this).toggleClass("active").siblings(".div10_main").slideToggle("slow");
         });
+        window.onload = function () {
+            VK.init({apiId: 6337697, onlyWidgets: true});
+            VK.Widgets.Comments('vk_comments', {width: 500, limit: 15}, 321);
+        }
+
     </script>
 </div>
 </body>
