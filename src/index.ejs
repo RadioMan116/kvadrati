@@ -9,7 +9,7 @@
     <style><%- criticalStyle %></style>
     <!--<link rel="stylesheet" href="/style/grid-system.css">-->
     <link href="style/bootstrap.css" rel="stylesheet" type="text/css">
-    <!--<SCRIPT type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></SCRIPT>-->
+    <script src="jquery-1.7.2.js"></script>
     <script src="jquery-1.11.0.min.js"></script>
     <script src="bootstrap.js"></script>
     <link href="style/carousel.css" rel="stylesheet" type="text/css">
@@ -276,6 +276,8 @@
         <div class="div6_top">
             <img class="div6_top_img" src="images/logodiv.svg" alt="">
             <h3 class="div6_top_h3">Праис ▲ ▼</h3>
+            <p class="div10_p_one">▲</p>
+            <p class="div10_p_two">▼</p>
         </div>
         <div class="div6_information">
             * ВСЕ ЦЕНЫ, УКАЗАННЫЕ НА САЙТЕ ПРИВЕДЕНЫ КАК СПРАВОЧНАЯ ИНФОРМАЦИЯ И НЕ ЯВЛЯЮТСЯ ПУБЛИЧНОЙ ОФЕРТОЙ,
@@ -628,6 +630,9 @@
                 next.children(':first-child').clone().appendTo($(this));
             }
 
+        });
+        $(".div6_top").click(function () {
+            $(this).toggleClass("active").siblings(".div6_prices").slideToggle("slow")
         });
         window.onload = function () {
             VK.init({apiId: 6337697, onlyWidgets: true});
