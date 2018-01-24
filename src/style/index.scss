@@ -37,6 +37,7 @@ img {
 .div1_logo {
   align-items: center;
   width: 10.24%;
+  min-width: 4rem;
 }
 
 .div1_list {
@@ -158,8 +159,6 @@ img {
 .div3_foto {
   width: 33.203125%;
   margin-left: 7.80273438%;
-  display: flex;
-  justify-content: center;
 }
 
 .div3_text {
@@ -213,7 +212,7 @@ img {
 
 .div4_services_h3 {
   text-decoration: underline;
-  height: 1.4375rem;
+  height: 1.7375rem;
 }
 
 .div4_services:hover .div4_services_p {
@@ -310,6 +309,25 @@ img {
   border-bottom: 1px solid black;
 }
 
+.star_div5 {
+  background: url("/images/Star.png");
+  background-size: 100% 100%;
+  height: 10rem;
+  width: 100%;
+  &__star2 {
+    background: url("/images/Star2.png");
+    background-size: 100% 100%;
+  }
+  &__star3 {
+    background: url("/images/Star3.png");
+    background-size: 100% 100%;
+  }
+  &__star4 {
+    background: url("/images/Star4.png");
+    background-size: 100% 100%;
+  }
+}
+
 .div5_star:hover {
   border-bottom: 2px solid white;
 }
@@ -317,6 +335,24 @@ img {
 .div5_star:hover .star_p {
   font-size: 187.5%;
   top: 22%;
+  color: white;
+}
+
+.div5_star:hover .star_div5 {
+  background: url("/images/BStar.png");
+  background-size: 100% 100%;
+  &__star2 {
+    background: url("/images/BStar2.png");
+    background-size: 100% 100%;
+  }
+  &__star3 {
+    background: url("/images/BStar3.png");
+    background-size: 100% 100%;
+  }
+  &__star4 {
+    background: url("/images/BStar4.png");
+    background-size: 100% 100%;
+  }
 }
 
 .star_p {
@@ -334,6 +370,7 @@ img {
 
 .div6 {
   padding-bottom: 5%;
+
 }
 
 .div6_top {
@@ -341,6 +378,7 @@ img {
   margin-top: 3.8125rem;
   margin-left: 4.00390625%;
   width: auto;
+  position: relative;
 }
 
 .div6_top_h3 {
@@ -363,7 +401,6 @@ img {
 
 .div6_prices {
   padding-left: 4.00390625%;
-  display: none;
 }
 
 .div6_prices_title {
@@ -418,13 +455,30 @@ img {
   font-weight: 400;
 }
 
+.div6_p_two {
+  position: absolute;
+  top: 61%;
+  left: 50%;
+  font-size: 150%;
+  opacity: 0;
+}
+
+.div6_p_one {
+  position: absolute;
+  top: 61%;
+  left: 50%;
+  font-size: 150%;
+}
+
+.active .div6_p_one {
+  display: none;
+}
+
 .div7 {
   background: black;
   padding: 5%;
   display: flex;
   justify-content: center;
-  align-items: center;
-
 }
 
 .div7_menu {
@@ -449,6 +503,13 @@ img {
 .div7_menu_h3 {
   text-decoration: underline;
   padding-top: 5%;
+}
+
+.div7_mib {
+  font-size: 200%;
+  color: white;
+  margin-top: 10%;
+  font-weight: bold;
 }
 
 .div8 {
@@ -903,6 +964,9 @@ img {
   }
   .div5_stars {
     margin-top: 2.64375rem;
+  }
+  .star_div5 {
+    height: 8rem;
   }
   .div5_star:hover .star_p {
     font-size: 187.5%;
