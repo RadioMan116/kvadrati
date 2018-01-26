@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Лучшие товары и услуги республики Татарстан</title>
+    <title>Теплые Квадраты</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style><%- criticalStyle %></style>
@@ -1259,7 +1259,11 @@
             });
 
         });
-
+        $( ".active" ).click(function( event ) {
+            $('.div10_span a[href="\' + hash + \'"]').tab ('show'); //Открываем таб extra
+            document.location.href = $(this).attr('href');  //меняем хэш урла
+            return false;
+        });
     </script>
 </div>
 </body>

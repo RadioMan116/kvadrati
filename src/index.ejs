@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Лучшие товары и услуги республики Татарстан</title>
+    <title>Теплые Квадраты</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style><%- criticalStyle %></style>
@@ -41,7 +41,7 @@
                 <a class="div1_inst_img" href="https://www.instagram.com/obshivka_balkonovk/">
                     <img src="images/foto2.png" alt="instagram">
                 </a>
-                <a class="div1_inst_img"  href="https://vk.com/obshivka_balkonov_vagonkoi">
+                <a class="div1_inst_img" href="https://vk.com/obshivka_balkonov_vagonkoi">
                     <img src="images/foto8.png" alt="vk">
                 </a>
 
@@ -112,9 +112,14 @@
                     <b>
                         Добрый день!
                     </b>
-                    <br>Меня зовут Абдулин Айнур, я из респулики Татарстан, город Казань.Мне 24 года, занимаюсь утеплением и отделкой лоджий и балконов деревом, качественно и профессионально. Если вы на моем сайте, значит вы искали меня и вам нужна качественная отделка лоджии или балкона. Занимаюсь этой деятельностью уже довольно давно, примерно 5-6 лет, и за это время набрался такого опыта,что на замере я вам предложу и покажу сотни работ.
+                    <br>Меня зовут Абдулин Айнур, я из респулики Татарстан, город Казань.Мне 24 года, занимаюсь
+                    утеплением и отделкой лоджий и балконов деревом, качественно и профессионально. Если вы на моем
+                    сайте, значит вы искали меня и вам нужна качественная отделка лоджии или балкона. Занимаюсь этой
+                    деятельностью уже довольно давно, примерно 5-6 лет, и за это время набрался такого опыта,что на
+                    замере я вам предложу и покажу сотни работ.
                     <br>
                     Директор: Абдулин Айнур</p>
+                <img src="images/Bitmap.png" alt="">
                 <div class="div3_social">
                     <p>
                         П.С:<br> Вы может связатся со мной напрямую:
@@ -332,8 +337,8 @@
         <div class="div6_top">
             <img class="div6_top_img" src="images/logodiv.svg" alt="">
             <h3 class="div6_top_h3">Праис</h3>
-            <p class="div6_p_one">▼ Открыть</p>
-            <p class="div6_p_two">▲ Закрыть</p>
+            <p class="div6_p_one">▼ Закрыть</p>
+            <p class="div6_p_two">▲ Открыть</p>
         </div>
         <div class="div6_information">
             * ВСЕ ЦЕНЫ, УКАЗАННЫЕ НА САЙТЕ ПРИВЕДЕНЫ КАК СПРАВОЧНАЯ ИНФОРМАЦИЯ И НЕ ЯВЛЯЮТСЯ ПУБЛИЧНОЙ ОФЕРТОЙ,
@@ -693,7 +698,7 @@
         });
         window.onload = function () {
             VK.init({apiId: 6337697, onlyWidgets: true});
-            VK.Widgets.Comments('vk_comments', {autoPublish:1, limit: 5},321);
+            VK.Widgets.Comments('vk_comments', {autoPublish: 1, limit: 5}, 321);
         }
         $(document).ready(function () { // Ждём загрузки страницы
 
@@ -712,7 +717,11 @@
                     }, 800);
                 });
             });
-
+        });
+        $( ".active" ).click(function( event ) {
+            $('.div10_span a[href="\' + hash + \'"]').tab ('show'); //Открываем таб extra
+            document.location.href = $(this).attr('href');  //меняем хэш урла
+            return false;
         });
     </script>
 </div>
