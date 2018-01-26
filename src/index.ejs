@@ -32,6 +32,7 @@
             </div>
         </div>
         <div class="div1_foto">
+            <img src="images/band.svg" alt="">
         </div>
         <div class="div1_info">
             <a href="tel:+7(843)2033359">+7(843)203-33-59</a>
@@ -107,11 +108,11 @@
                 <img src="images/Fqyeh.png" alt="хозяин">
             </div>
             <div class="div3_text">
-                <p>Добрый день!<br>Меня зовут Абдулин Айнур, я из респулики Татарстан, город Казань.Мне 24 года,
-                    занимаюсь утеплением и отделкой лоджий и балконов деревом, качественно и профессионально. Если вы на
-                    моем сайте, значит вы искали меня и вам нужна качественную отделку лоджии или балкона. Занимаюсь
-                    этой деятельностью уже довольно давно, примерно 5-6 лет, и за это время набрался такого опыта что на
-                    замере я вам предложу и покажу сотни работ.
+                <p>
+                    <b>
+                        Добрый день!
+                    </b>
+                    <br>Меня зовут Абдулин Айнур, я из респулики Татарстан, город Казань.Мне 24 года, занимаюсь утеплением и отделкой лоджий и балконов деревом, качественно и профессионально. Если вы на моем сайте, значит вы искали меня и вам нужна качественная отделка лоджии или балкона. Занимаюсь этой деятельностью уже довольно давно, примерно 5-6 лет, и за это время набрался такого опыта,что на замере я вам предложу и покажу сотни работ.
                     <br>
                     Директор: Абдулин Айнур</p>
                 <div class="div3_social">
@@ -246,7 +247,6 @@
             <div class="container">
                 <div class="carousel slide" data-ride="carousel" data-type="multi" data-interval="7000"
                      id="myCarouselGrid">
-
                     <div class="carouselGrid-inner">
                         <div class="item active">
                             <div class="col-lg-15 col-md-3 col-sm-4 col-xs-6"><img class="image"
@@ -299,22 +299,30 @@
         </div>
         <div class="div5_stars">
             <div class="div5_star">
-                <div class="star_div5"></div>
+                <div class="star_div5">
+                    <img src="images/Star.png" alt="">
+                </div>
                 <p class="star_p">14</p>
                 <img class="img_star" src="images/zvonok.svg" alt="">
             </div>
             <div class="div5_star">
-                <div class="star_div5 star_div5__star2"></div>
+                <div class="star_div5 star_div5__star2">
+                    <img src="images/Star.png" alt="">
+                </div>
                 <p class="star_p">843</p>
                 <img class="img_star" src="images/obshivka.svg" alt="">
             </div>
             <div class="div5_star">
-                <div class="star_div5 star_div5__star3"></div>
+                <div class="star_div5 star_div5__star3">
+                    <img src="images/Star.png" alt="">
+                </div>
                 <p class="star_p">582</p>
                 <img class="img_star" src="images/box.svg" alt="">
             </div>
             <div class="div5_star">
-                <div class="star_div5 star_div5__star4"></div>
+                <div class="star_div5 star_div5__star4">
+                    <img src="images/Star.png" alt="">
+                </div>
                 <p class="star_p">999</p>
                 <img class="img_star" src="images/finger.svg" alt="">
             </div>
@@ -650,13 +658,13 @@
     <div class="div7">
         <div class="div7_menu">
             <h3 class="div7_h3">Меню</h3>
-            <a class="div7_menu_a" href=""><h3 class="div7_menu_h3">Главная</h3></a>
-            <a class="div7_menu_a" href=""><h3 class="div7_menu_h3">Услуги</h3></a>
-            <a class="div7_menu_a" href=""><h3 class="div7_menu_h3">Контакты</h3></a>
+            <a class="div7_menu_a" href="index.html"><h3 class="div7_menu_h3">Главная</h3></a>
+            <a class="div7_menu_a" href="index2.html"><h3 class="div7_menu_h3">Услуги</h3></a>
+            <a class="div7_menu_a" href="index3.html"><h3 class="div7_menu_h3">Контакты</h3></a>
         </div>
         <div class="div7_about">
             <h3 class="div7_h3">Создано</h3>
-            <h3 class="div7_mib">M I B</h3>
+            <a href="http://mib.store/"><h3 class="div7_mib">M I B</h3></a>
         </div>
         <div class="div7_info">
             <h3 class="div7_h3">Живые Комментарии !</h3>
@@ -685,7 +693,7 @@
         });
         window.onload = function () {
             VK.init({apiId: 6337697, onlyWidgets: true});
-            VK.Widgets.Comments('vk_comments', {width: 500, limit: 15}, 321);
+            VK.Widgets.Comments('vk_comments', {autoPublish:1, limit: 5},321);
         }
         $(document).ready(function () { // Ждём загрузки страницы
 

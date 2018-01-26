@@ -111,17 +111,13 @@
     </div>
     <div class="div7">
         <div class="div7_menu">
-            <h3 class="div7_h3">Меню</h3>
-            <a class="div7_menu_a" href=""></a>
-            <h3 class="div7_menu_h3">Главная</h3>
-            <a class="div7_menu_a" href=""></a>
-            <h3 class="div7_menu_h3">Услуги</h3>
-            <a class="div7_menu_a" href=""></a>
-            <h3 class="div7_menu_h3">Контакты</h3>
+            <a class="div7_menu_a" href="index.html"><h3 class="div7_menu_h3">Главная</h3></a>
+            <a class="div7_menu_a" href="index2.html"><h3 class="div7_menu_h3">Услуги</h3></a>
+            <a class="div7_menu_a" href="index3.html"><h3 class="div7_menu_h3">Контакты</h3></a>
         </div>
         <div class="div7_about">
             <h3 class="div7_h3">Создано</h3>
-            <h3 class="div7_mib">M I B</h3>
+            <a href="http://mib.store/"><h3 class="div7_mib">M I B</h3></a>
         </div>
         <div class="div7_info">
             <h3 class="div7_h3">Живые Комментарии !</h3>
@@ -147,7 +143,7 @@
         });
         window.onload = function () {
             VK.init({apiId: 6337697, onlyWidgets: true});
-            VK.Widgets.Comments('vk_comments', {width: 500, limit: 15}, 321);
+            VK.Widgets.Comments('vk_comments', {autoPublish:1, limit: 5},321);
         }
     </script>
 </div>
