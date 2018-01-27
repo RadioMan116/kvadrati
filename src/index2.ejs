@@ -3,17 +3,21 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Теплые Квадраты</title>
+    <title>Теплые Квадраты.Обшивка балконов в Казани, 203-33-59.</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style><%- criticalStyle %></style>
     <!--<link rel="stylesheet" href="/style/grid-system.css">-->
     <link rel="shortcut icon" href="images/favicon.jpg" type="image/jpg">
     <link href="style/bootstrap.css" rel="stylesheet" type="text/css">
-    <script src="jquery-1.11.0.min.js"></script>
+    <!--<script src="jquery-1.11.0.min.js"></script>-->
     <script src="bootstrap.js"></script>
     <link href="style/carousel.css" rel="stylesheet" type="text/css">
     <script src="jquery-1.7.2.js"></script>
+    <meta name="yandex-verification" content="f4209caa5cf06f23" />
+    <meta name="google-site-verification" content="b6HStXg4btkxGUqDHKeSLXJOijAbCiOTkqzbLq7QQL4" />
+    <meta name="keywords" content=" обшивка балкона казань ,обшивка вагонкой казань, лоджия обшивка казань, балкон отделка казань, утепление балконов , встроеные шкафы на балконе казань, тумбочки на балконе, свет на балконе казань,обшивка балкона снаружи казань,остекление балкона казань,балкон остекление,балкон цена,пластиковый балкон,балкон под ключ казань,теплые квадраты казань, ">
+    <meta name="description" content="Обшиваем балконы - лоджии, любой сложности .Предоплату за свою работу мы заранее не берем.Выезд на замер - доставка материала - подъем на этаж - бесплатно .">
     <script src="https://vk.com/js/api/openapi.js?151" type="text/javascript"></script>
 </head>
 <body>
@@ -1259,11 +1263,12 @@
             });
 
         });
-        $( ".active" ).click(function( event ) {
-            $('.div10_span a[href="\' + hash + \'"]').tab ('show'); //Открываем таб extra
-            document.location.href = $(this).attr('href');  //меняем хэш урла
-            return false;
-        });
+        (function($) {
+            $(function() {
+                var hash = window.location.hash;
+                $('.div10_main a[href="' + hash + '"]').tab('show');
+            })
+        })
     </script>
 </div>
 </body>
