@@ -220,7 +220,7 @@ img {
 
 .div4_services:hover .div4_services_h3 {
   margin-left: 0;
- text-decoration: none;
+  text-decoration: none;
   transition: 0.2s;
 }
 
@@ -623,7 +623,7 @@ img {
 }
 
 .div10_main {
-  //display: none;
+  display: none;
   padding-bottom: 5rem;
   position: relative;
 }
@@ -643,6 +643,10 @@ img {
 .div11_img_1 {
   width: 31%;
   margin-left: 11.6875%;
+}
+
+.div11_img_1 img {
+  width: 100%;
 }
 
 .div11_img_2 {
