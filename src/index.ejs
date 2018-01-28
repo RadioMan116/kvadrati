@@ -717,7 +717,7 @@
             <a href="http://mib.store/"><h3 class="div7_mib">M I B</h3></a>
         </div>
         <div class="div7_info">
-            <h3 class="div7_h3">Живые Комментарии !</h3>
+            <h3 class="div7_h3">Живые комментарии </h3>
             <div id="vk_comments"></div>
         </div>
     </div>
@@ -763,12 +763,12 @@
                 });
             });
         });
-        (function ($) {
-            $(function () {
-                var hash = window.location.hash;
-                $('.div10_main a[href="' + hash + '"]').tab('show');
-            })
-        })
+        $(function() {
+            if (window.location.hash.length > 0) {
+                $('a[href="' + window.location.hash + '"]').click();
+            }
+        });
+
     </script>
 </div>
 </body>

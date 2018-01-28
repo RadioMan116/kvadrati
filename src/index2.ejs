@@ -334,8 +334,8 @@
             </div>
         </div>
         <div class="div10">
-        <span class="div10_span">
-            Обшивка блок-хаусом<a id="three" ></a>
+        <span class="div10_span" id="three">
+            Обшивка блок-хаусом
             <p class="div10_p_one">➕</p>
             <p class="div10_p_two">➖</p>
         </span>
@@ -409,8 +409,8 @@
             </div>
         </div>
         <div class="div10">
-        <span class="div10_span">
-            Обшивка без сучковой вагонкой<a id="four" ></a>
+        <span class="div10_span" id="four">
+            Обшивка без сучковой вагонкой
             <p class="div10_p_one">➕</p>
             <p class="div10_p_two">➖</p>
         </span>
@@ -490,8 +490,8 @@
             </div>
         </div>
         <div class="div10">
-        <span class="div10_span">
-            Обшивка стеновым паркетом из липы<a id="five" ></a>
+        <span class="div10_span" id="five">
+            Обшивка стеновым паркетом из липы
             <p class="div10_p_one">➕</p>
             <p class="div10_p_two">➖</p>
         </span>
@@ -567,8 +567,8 @@
             </div>
         </div>
         <div class="div10">
-        <span class="div10_span">
-            Покраска, тонирование дерева, старение(броширование)<a id="six" ></a>
+        <span class="div10_span" id="six">
+            Покраска, тонирование дерева, старение(броширование)
             <p class="div10_p_one">➕</p>
             <p class="div10_p_two">➖</p>
         </span>
@@ -669,8 +669,8 @@
             </div>
         </div>
         <div class="div10">
-        <span class="div10_span">
-           Изготовление встроенных шкафов и прочей мебели<a id="seven" ></a>
+        <span class="div10_span" id="seven">
+           Изготовление встроенных шкафов и прочей мебели
             <p class="div10_p_one">➕</p>
             <p class="div10_p_two">➖</p>
         </span>
@@ -769,8 +769,8 @@
             </div>
         </div>
         <div class="div10">
-        <span class="div10_span">
-            Вывод электричества, тёплые полы<a id="eight" ></a>
+        <span class="div10_span" id="eight">
+            Вывод электричества, тёплые полы
             <p class="div10_p_one">➕</p>
             <p class="div10_p_two">➖</p>
         </span>
@@ -867,8 +867,8 @@
             </div>
         </div>
         <div class="div10">
-        <span class="div10_span">
-            Настил, откосы подоконники<a id="nine" ></a>
+        <span class="div10_span" id="nine">
+            Настил, откосы подоконники
             <p class="div10_p_one">➕</p>
             <p class="div10_p_two">➖</p>
         </span>
@@ -959,8 +959,8 @@
             </div>
         </div>
         <div class="div10">
-        <span class="div10_span">
-           Утепление балконов или лоджий<a id="ten" ></a>
+        <span class="div10_span"  id="ten">
+           Утепление балконов или лоджий
             <p class="div10_p_one">➕</p>
             <p class="div10_p_two">➖</p>
         </span>
@@ -1027,8 +1027,8 @@
             </div>
         </div>
         <div class="div10">
-        <span class="div10_span">
-            Обшивка саун и  изготовление полог<a id="eleven" ></a>
+        <span  id="eleven" class="div10_span">
+            Обшивка саун и  изготовление полог
             <p class="div10_p_one">➕</p>
             <p class="div10_p_two">➖</p>
         </span>
@@ -1177,8 +1177,8 @@
             </div>
         </div>
         <div class="div10">
-        <span class="div10_span">
-            Изготовление декоративных балок<a id="twelve" ></a>
+        <span id="twelve" class="div10_span">
+            Изготовление декоративных балок
             <p class="div10_p_one">➕</p>
             <p class="div10_p_two">➖</p>
         </span>
@@ -1255,7 +1255,7 @@
             <a href="http://mib.store/"><h3 class="div7_mib">M I B</h3></a>
         </div>
         <div class="div7_info">
-            <h3 class="div7_h3">Живые Комментарии !</h3>
+            <h3 class="div7_h3">Живые комментарии</h3>
             <div id="vk_comments"></div>
         </div>
     </div>
@@ -1302,12 +1302,12 @@
             });
 
         });
-        (function($) {
-            $(function() {
-                var hash = window.location.hash;
-                $('.div10_main a[href="' + hash + '"]').tab('show');
-            })
-        })
+        $(function() {
+            if (window.location.hash.length > 0) {
+                $('a[href="' + window.location.hash + '"]').click();
+            }
+        });
+
     </script>
 </div>
 </body>

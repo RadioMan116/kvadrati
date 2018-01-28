@@ -127,7 +127,7 @@ img {
   position: absolute;
   right: 1%;
   top: 190%;
-  width: 20%;
+  width: 16%;
 }
 
 .div1_link {
@@ -572,7 +572,7 @@ img {
   padding-left: 4.1015625%;
   width: 50.5585938%;
   position: absolute;
-  bottom: 2rem;
+  bottom: 5%;
 }
 
 .div10_general .div10 {
@@ -592,6 +592,14 @@ img {
   border: 2px solid #fff;
   align-items: center;
   cursor: pointer;
+}
+
+#twelve:target {
+  display: block;
+}
+
+#eleven:target {
+  display: block;
 }
 
 .div10_p_two {
@@ -654,6 +662,10 @@ img {
   margin-left: 4.6875%;
 }
 
+.div11_img_2 img {
+  align-self: flex-start;
+}
+
 .div11_info {
   padding-top: 3rem;
   padding-bottom: 2rem;
@@ -669,6 +681,7 @@ img {
   width: 40%;
   padding-left: 7.8125%;
   margin-right: 10%;
+  white-space: nowrap;
 }
 
 .div12 {
@@ -976,9 +989,7 @@ img {
   .div5_stars {
     margin-top: 2.64375rem;
   }
-  .star_div5 {
-    height: 8rem;
-  }
+
   .div5_star:hover .star_p {
     font-size: 187.5%;
     top: 18%;
