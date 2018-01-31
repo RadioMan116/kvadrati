@@ -480,6 +480,10 @@ img {
   display: none;
 }
 
+.active .div6_p_two {
+  opacity: 1;
+}
+
 .div7 {
   background: black;
   padding: 5%;
@@ -598,7 +602,6 @@ img {
   align-items: center;
   cursor: pointer;
 }
-
 
 .div10_p_two {
   position: absolute;
@@ -975,8 +978,7 @@ img {
       text-align: right;
     }
   }
-  }
-
+}
 
 @media (max-width: 768px) {
   .div5_text {
@@ -1156,7 +1158,7 @@ img {
     width: 100%;
   }
   .div10_p_one, .div10_p_two {
-    right:-5%;
+    right: -5%;
   }
   .div11_info {
     padding-top: 1rem;
@@ -1185,6 +1187,7 @@ img {
     font-size: 110%;
   }
 }
+
 @media (max-width: 320px) {
   .div9_info {
     top: -10px;
