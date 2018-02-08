@@ -615,7 +615,7 @@ img {
   position: absolute;
   right: 0;
   padding-right: 9.9609375%;
-  top: 20%;
+  bottom: 0;
 }
 
 .active p:first-child {
@@ -651,7 +651,7 @@ img {
 
 .div11_img_1 {
   width: 31%;
-  margin-left: 11.6875%;
+  margin-left: 2.6875%;
 }
 
 .div11_img_1 img {
@@ -664,7 +664,7 @@ img {
 }
 
 .div11_img_2 img {
-  align-self: flex-start;
+  align-self: center;
 }
 
 .div11_info {
@@ -903,7 +903,7 @@ img {
     margin: 1.9rem 2% 0;
   }
   .div4_services_h3 {
-    margin-top: 2.1rem;
+    margin-top: 6%;
   }
 }
 
@@ -1197,6 +1197,7 @@ img {
     bottom: 0%;
   }
 }
+
 @media (max-width: 375px) {
   .div4_services {
     width: 70%;
