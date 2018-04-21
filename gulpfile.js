@@ -54,8 +54,8 @@ gulp.task('scripts', function () {
 gulp.task('sections', ['preproc'], function () {
     var criticalStyle = fs.readFileSync('./dist/style/styles.css', 'utf8');
     var version = '4';
-    return gulp.src('./src/*.ejs')
-        .pipe(ejs({criticalStyle: criticalStyle, version: version}, {}, {ext: '.html'}))
+    return gulp.src('./src/*.html')
+        // .pipe(ejs({criticalStyle: criticalStyle, version: version}, {}, {ext: '.html'}))
         .pipe(htmlmin({collapseWhitespace: true}))
         .pipe(gulp.dest('./dist'))
 });
