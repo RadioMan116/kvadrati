@@ -7,17 +7,7 @@
 .reset();
 
 body {
-  font-family: "HelveticaRegular";
-}
-
-@font-face {
-  font-family: "HelveticaRegular";
-  src: url("../fonts/HelveticaRegular/HelveticaRegular.eot");
-  src: url("../fonts/HelveticaRegular/HelveticaRegular.eot?#iefix") format("embedded-opentype"),
-  url("../fonts/HelveticaRegular/HelveticaRegular.woff") format("woff"),
-  url("../fonts/HelveticaRegular/HelveticaRegular.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
+  font-family: Georgia, serif;
 }
 
 .wrapper {
@@ -66,6 +56,7 @@ h6, .h6 {
 
 a, .a {
   color: inherit;
+
 }
 
 .up {
@@ -186,7 +177,7 @@ a, .a {
           .s-block({ margin-left: 2%; });
           .md-block({ min-width: unset; min-height: unset; width: 35%; });
 
-          img{
+          img {
             min-width: 40px;
             min-height: 30px;
             max-width: 50px;
@@ -409,6 +400,7 @@ a, .a {
     background-size: cover;
     max-width: 1440px;
     display: flex;
+    justify-content: center;
     .wrapper {
       z-index: 1000;
       margin-bottom: 9.4444444444444444%;
@@ -441,25 +433,29 @@ a, .a {
 
           .diamond {
             opacity: 1;
+
           }
 
           .h5 {
             background-color: unset;
             color: @color_white;
+            text-shadow: 1px 1px 2px black, 0 0 1em @color_black;
           }
         }
         .diamond {
           position: absolute;
           top: 0;
-          left: 0;
+          left: -2%;
+          font-size: 30px;
           opacity: 0;
           color: @color_white;
           transition: 0.5s;
+          text-shadow: 1px 1px 2px black, 0 0 1em @color_black;
           .md-block({ left: -30px; font-size: @font_18 });
 
         }
         .h5 {
-          width: 75%;
+          width: 86%;
           margin: 0;
           padding: 1.6075767388238969% 0 2.5261920181518379% 0;
           background-color: rgba(246, 166, 35, 0.4);
@@ -474,7 +470,8 @@ a, .a {
 }
 
 .about_company {
-
+  .wrapper {
+  }
   .header {
 
     .bigText {
@@ -648,13 +645,14 @@ a, .a {
     transition: .5s;
     max-width: 1440px;
     width: 100%;
+    background: url("../img/home/tileable_wood_texture.png");
 
     .summary {
       display: flex;
       justify-content: center;
       align-items: center;
       height: 60px;
-      background: rgba(246, 166, 35, 0.4);
+      background: rgb(248, 219, 161);
       border: 2px solid rgba(246, 166, 35, 0.8);
       transition: 0.5s;
 
@@ -745,13 +743,9 @@ a, .a {
       &:hover {
 
         .h6 {
-          font-size: 150%;
           background: @color_squash;
-
-          .ld-block({ font-size: 120%; });
-          .s-block({ font-size: 102%; });
-          .sm-block({ font-size: 90%; });
-          .md-block({ font-size: 13px; });
+          color: @color_white;
+          text-shadow: 1px 1px 2px black, 0 0 1em @color_black;
         }
       }
 
@@ -826,8 +820,17 @@ a, .a {
             .span {
               color: @color_squash;
               background: white;
-              padding: 3px 8px;
+              padding: 2px 8px 5px;
               border-radius: 50%;
+            }
+
+            &:hover {
+              color: @color_black;
+
+              .span {
+                color: @color_white;
+                background: @color_squash;
+              }
             }
           }
         }
@@ -882,8 +885,12 @@ a, .a {
 
       .a {
         color: @color_white;
+        &:hover {
+          color: @color_squash;
+        }
         .h5 {
           text-align: left;
+
         }
       }
     }
@@ -900,6 +907,9 @@ a, .a {
 
       .a {
         color: @color_white;
+        &:hover {
+          color: @color_squash;
+        }
 
         .h2 {
           text-align: left;

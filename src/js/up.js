@@ -27,3 +27,8 @@ $(function () {
 
 
 });
+
+window.onload = function () {
+    VK.init({apiId: 6337697, onlyWidgets: true});
+    VK.Widgets.Comments('vk_comments', {autoPublish: 1, limit: 5}, 321);
+}
